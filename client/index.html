@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<link
+			rel="icon"
+			type="image/svg+xml"
+			href="/favicon.ico"
+		/>
+		<link
+			rel="stylesheet"
+			href="style.css"
+		/>
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Create IT</title>
+	</head>
+	<body>
+		<div id="app">
+			<header>
+				<div class="navbar">
+					<div class="logo">
+						<h2>Create IT</h2>
+						<h4>AI Image Genrator</h4>
+					</div>
+					<div class="nav-links">
+						<ul>
+							<li>
+								<a
+									href="https://beta.openai.com/docs"
+									target="_blank"
+									>OpenAI API Docs</a
+								>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</header>
+
+			<main>
+				<div class="main">
+					<section class="showcase">
+						<form
+							id="image-form"
+							class="form"
+						>
+							<div class="title">Let's get creative!</div>
+							<div class="subtitle">Describe an image:</div>
+							<div class="input-container ic1">
+								<input
+									type="text"
+									id="prompt"
+									class="input"
+								/>
+								<div class="cut"></div>
+								<label
+									for="Image Description"
+									class="placeholder"
+									>Description</label
+								>
+							</div>
+							<div class="cut"></div>
+							<!-- size -->
+							<div class="input-container ic2">
+								<select
+									class="select"
+									name="size"
+									id="size"
+								>
+									<option value="small">Small</option>
+									<option
+										value="medium"
+										selected
+									>
+										Medium
+									</option>
+									<option value="large">Large</option>
+								</select>
+							</div>
+							<div class="cut"></div>
+							<button
+								type="submit"
+								class="submit"
+							>
+								Generate
+							</button>
+						</form>
+					</section>
+
+					<section class="image">
+						<div class="image-container">
+							<h2 class="msg"></h2>
+							<img
+								src=""
+								alt=""
+								id="image"
+							/>
+						</div>
+					</section>
+				</div>
+			</main>
+
+			<div class="spinner"></div>
+		</div>
+
+		<script
+			type="module"
+			src="/script.js"
+		></script>
+	</body>
+</html>
