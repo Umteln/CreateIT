@@ -18,7 +18,7 @@ function onSubmit(e) {
 async function generateImageRequest(prompt, size) {
 	try {
 		showSpinner();
-		const response = await fetch('http://localhost:5001', {
+		const response = await fetch('https://createit.onrender.com', {
 			method: 'POST',
 			headers: {
 				'Content-Type': 'application/json',
