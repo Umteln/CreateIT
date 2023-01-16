@@ -205,8 +205,6 @@ body {
 /* Image */
 
 .image {
-	border: 1px solid #392b58;
-	border-radius: 20px;
 	width: 100%;
 	margin-top: 2rem;
 	margin-right: 3rem;
